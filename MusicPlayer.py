@@ -102,11 +102,21 @@ def play_recipe(recipe,vol=1):
 # path = "midicsv-1.1/Henry Mancini - Pink Panther.csv"
 # path = "midicsv-1.1/Beethoven-Moonlight-Sonata.csv"
 # path = "midicsv-1.1/Sia - Elastic Heart.csv"
-path = "midicsv-1.1/Pirates of the Caribbean - He's a Pirate.csv"
+# path = "midicsv-1.1/Pirates of the Caribbean - He's a Pirate.csv"
 # path = "midicsv-1.1/joe_hisaishione_summers_day.csv"
 # path = "midicsv-1.1/pachelbel_canon.csv"
+path = input("Enter path to MIDI-CSV file:")
 
+def true_or_false(string):
+    if (string=="Yes" or string=="yes" or string=="Y" or string=="y"):
+        return True
+    elif (string=="No" or string=="no" or string=="n" or string=="N"):
+        return False
+    else:
+        print("try again")
+        true_or_false(input())
+    
 echo_time = None # how long notes agiare played. Use None for as long as possible
-play_all_instruments = False # plays instrument whether it is classified as pianno or not
+play_all_instruments = true_or_false(input("Play all instruments? y/n")) # plays instrument whether it is classified as pianno or not
 
 play_recipe(make_recipe(path,echo_time,play_all_instruments))
