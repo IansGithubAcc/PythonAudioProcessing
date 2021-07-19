@@ -1,0 +1,19 @@
+The first 22 spaces are reserved for variable names after which the variables are defines.
+Lines which do not start with a recognised variable will be skipped.
+Variables with multiple integers use the ", " seperator.
+
+Variable             |Value
+--------------------------------------------------------------------------------
+Instruments           2
+
+Name                  Piano
+Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/notes/
+Velocity_subfolders   piano soft, piano med, piano loud
+Velocity_bounds (<=)  0, 48, 96, 124
+
+Name                  Piano old
+Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/piano_notes_old/
+Velocity_subfolders 
+Velocity_bounds (<=)  0, 124
+
+Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Dreamland.csv
