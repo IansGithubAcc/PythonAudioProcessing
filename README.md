@@ -11,8 +11,9 @@ The first phase of this project focusses on the ability to play recipes with ind
 
 The files currently published allow the user to interpret such MIDI-converted-CSV files and play them back provided a musical note audio set is given. An example of such an audio set are the [University of Iowa Steinway (pianno) recordings](http://theremin.music.uiowa.edu/MISpiano.html). In its current form the code only plays pianno type instruments, however the format allows for easy inclusion of other/multiple instruments.
 
-The code as currently written seems to perform reasonably well, to the point where you can enjoyably listen to most pianno songs. Currently the set-up needs the folders with notes to have a specific layout, but the inclusion of an input setting file is on its way.
+The MIDICSV player can easilly be used by downloading the .exe file from the dist folder and using the input to define file paths. Instrument note files are ecpected to be named by their MIDI number. The code as currently written seems to perform reasonably well, to the point where you can enjoyably listen to most pianno songs.
+
 ## Next steps
 The second phase of the project will delve into the analyses and interpretation of raw audio files in order convert them the MIDI-converted-CSV format.
 
-The last phase of the project goes a step further and will attempt to generate music using interpreted music.
+The last phase of the project goes a step further and will attempt to generate music using interpreted music
