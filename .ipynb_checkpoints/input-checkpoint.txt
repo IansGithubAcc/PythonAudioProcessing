@@ -7,13 +7,16 @@ Variable             |Value
 Instruments           2
 
 Name                  Piano
+Note_file_type        wav
 Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/notes/
 Velocity_subfolders   piano soft, piano med, piano loud
 Velocity_bounds (<=)  0, 48, 96, 124
 
 Name                  Piano old
+Note_file_type        wav
 Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/piano_notes_old/
 Velocity_subfolders 
 Velocity_bounds (<=)  0, 124
 
-Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Dreamland.csv
+Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/for_elise_by_beethoven.csv
+Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Tetris Theme.csv

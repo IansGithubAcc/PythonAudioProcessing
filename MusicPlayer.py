@@ -15,6 +15,7 @@ instrument_paths = []
 Velocity_subfolders = []
 Velocity_bounds = []
 midi_paths = []
+Note_file_types = []
 
 for i in range(len(lines)):
     if (lines[i][:11] == 'Instruments'):
@@ -29,6 +30,8 @@ for i in range(len(lines)):
         Velocity_subfolders.append(lines[i][22:])
     if (lines[i][:9] == 'Midi_path'):
         midi_paths.append(lines[i][22:])
+    if (lines[i][:len('Note_file_type')] == 'Note_file_type'):
+        Note_file_types.append(lines[i][22:])
         
 for i in range(n_instruments):
     Velocity_subfolders[i] = Velocity_subfolders[i].split(", ")
@@ -40,7 +43,7 @@ def note_path(midi_nr, vel, instrument):
     for i in range(len(Velocity_bounds[instrument])-1):
         if (midi_nr <= 108 and midi_nr >= 23):
             if (vel <= Velocity_bounds[instrument][i+1]):
-                return instrument_paths[instrument]+Velocity_subfolders[instrument][i]+"/" + str(midi_nr) + ".wav"
+                return instrument_paths[instrument]+Velocity_subfolders[instrument][i]+"/" + str(midi_nr) + "." + Note_file_types[instrument]
         else: 
             print("warning note missing")
             return -99
