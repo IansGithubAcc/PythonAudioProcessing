@@ -16,4 +16,5 @@ Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/G
 Velocity_subfolders 
 Velocity_bounds (<=)  0, 124
 
+Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/pachelbel_canon.csv
 Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Dreamland.csv
