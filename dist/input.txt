@@ -4,17 +4,19 @@ Variables with multiple integers use the ", " seperator.
 
 Variable             |Value
 --------------------------------------------------------------------------------
-Instruments           2
+instruments           2
 
-Name                  Piano
-Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/notes/
-Velocity_subfolders   piano soft, piano med, piano loud
-Velocity_bounds (<=)  0, 48, 96, 124
+name                  piano
+note_file_type        wav
+instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/notes/
+velocity_subfolders   piano soft, piano med, piano loud
+velocity_bounds (<=)  0, 48, 96, 124
 
-Name                  Piano old
-Instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/piano_notes_old/
-Velocity_subfolders 
-Velocity_bounds (<=)  0, 124
+name                  piano
+note_file_type        wav
+instrument_path       C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/piano_notes_old/
+velocity_subfolders 
+velocity_bounds (<=)  0, 124
 
-Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Billy_Joel_-_Piano_Man.csv
-Midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/pachelbel_canon.csv
+midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Pirates of the Caribbean - He's a Pirate.csv
+midi_path             C:/Users/ianmu/OneDrive - Delft University of Technology/Google Drive/Overig/Overig/midicsv-1.1/Billy_Joel_-_Piano_Man.csv
