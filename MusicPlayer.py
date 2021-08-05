@@ -7,6 +7,17 @@ from datetime import datetime, timedelta
 from pandas import read_csv
 
 ### Functions
+def main():
+    keep_playing = True
+    while keep_playing:
+        play_all_instruments = true_or_false(input("Play all instruments? y/n")) # plays all notes regardless of what instrument it is supposed to be played on 
+        csv_nr = int(is_int(input("Song number: ")) - 1)
+
+        INSTRUMENTS = [Instrument(read_input(),i) for i in range(read_input()[0])]
+        midicsv_paths = read_input()[5]
+        play_recipe(make_recipe(midicsv_paths[csv_nr],INSTRUMENTS[0]))
+        keep_playing = true_or_false(input("Keep playing? y/n"))
+
 def read_input():
     with open(r'input.txt') as f:
         lines = f.read().splitlines()
@@ -214,14 +225,6 @@ class Instrument:
             if (self.name == instr_nr_combinations[i][0]):
                 self.midi_instrument_nrs = instr_nr_combinations[i][1]
                 
-### Main
+### Execute main
 if __name__ == "__main__":
-    keep_playing = True
-    while keep_playing:
-        play_all_instruments = true_or_false(input("Play all instruments? y/n")) # plays all notes regardless of what instrument it is supposed to be played on 
-        csv_nr = int(is_int(input("Song number: ")) - 1)
-
-        INSTRUMENTS = [Instrument(read_input(),i) for i in range(read_input()[0])]
-        midicsv_paths = read_input()[5]
-        play_recipe(make_recipe(midicsv_paths[csv_nr],INSTRUMENTS[0]))
-        keep_playing = true_or_false(input("Keep playing? y/n"))
+    main()
