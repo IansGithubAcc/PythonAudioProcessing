@@ -1,5 +1,5 @@
 # Python Audio Processing
-Welcome to my Python Audio Processing (PAP) hobby project GitHub page.
+Welcome to my Python (3) Audio Processing (PAP) hobby project GitHub page.
 
 The purpose of PAP is threefold:
 - Analyse raw audio music files using Fourier transformation and transform it to a recipe of individual musical notes.
