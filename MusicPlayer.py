@@ -6,6 +6,7 @@ import pygame
 from datetime import datetime, timedelta
 from pandas import read_csv
 
+
 ### Functions
 def main():
     keep_playing = True
@@ -47,6 +48,7 @@ def read_input():
         velocity_bounds[i] = np.float_(velocity_bounds[i].split(", "))
     return n_instruments, instruments, instrument_paths, velocity_subfolders, velocity_bounds, midi_paths
 
+
 def note_path(midi_nr, vel, INSTRUMENT):
     """
     Returns the path to the note sound file. The function assumes the sound files have been sepparated in dictonaries based on the velocity of the velocity (loudness).
@@ -60,6 +62,7 @@ def note_path(midi_nr, vel, INSTRUMENT):
             print("warning note missing")
             return -99
 
+
 def player(Note, Volume,n):
     if (Note!=-99):
         channel = pygame.mixer.Channel(n)
@@ -67,6 +70,7 @@ def player(Note, Volume,n):
         channel.set_volume(Volume)
         channel.play(effect)
     return 
+
 
 def make_recipe(midicsv_path, INSTRUMENT, play_all_instruments = False, BPM_override = None):
     """
@@ -120,6 +124,7 @@ def make_recipe(midicsv_path, INSTRUMENT, play_all_instruments = False, BPM_over
     # Removing currently unused midicsv file lines such as changes in playspeed
     song = song[np.logical_or(song.iloc[:,2]=="Note_on_c", song.iloc[:,2]=="Note_off_c")] # Selecting only playing commands
     return song, multi, INSTRUMENT
+
 
 def play_recipe(recipe,velocity_volume=True, echo_time = None):
     """
@@ -182,6 +187,7 @@ def play_recipe(recipe,velocity_volume=True, echo_time = None):
     input('Press enter to stop: ')
     scheduler.shutdown()
 
+
 def true_or_false(string):
     """
     Function used for command line yes or no input. Takes either y/n and converts it into True of False output.
@@ -194,6 +200,7 @@ def true_or_false(string):
         print("try again")
         true_or_false(input())
         
+
 def is_int(integer):
     """
     Function used to check if input is an integer.
@@ -205,6 +212,7 @@ def is_int(integer):
         print("try again")
         is_int(input())
         
+
 ### Classes
 class Instrument:
     """
